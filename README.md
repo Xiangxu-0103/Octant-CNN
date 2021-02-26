@@ -5,9 +5,9 @@
 
 ## Introduction
 
-该工作属于自动化学报的期刊论文．可以在知网上找到该<a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CAPJ&dbname=CAPJLAST&filename=MOTO20200811000&v=JCreBvAGjWgZzXmddHz%25mmd2FUxnDkfiGk%25mmd2BXH4b1%25mmd2BhTNCOnQJdsAnaxoOLf%25mmd2FnGwMcwlVM">论文</a>．
+该工作属于自动化学报的期刊论文．可以在<a href="http://www.aas.net.cn/article/doi/10.16383/j.aas.c200080">此</a>阅读．
 
-This paper was accepted by ACTA AUTOMATICA SINICA and can be found in <a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CAPJ&dbname=CAPJLAST&filename=MOTO20200811000&v=JCreBvAGjWgZzXmddHz%25mmd2FUxnDkfiGk%25mmd2BXH4b1%25mmd2BhTNCOnQJdsAnaxoOLf%25mmd2FnGwMcwlVM">CNKI</a>  
+This paper was accepted by ACTA AUTOMATICA SINICA and can be read <a href="http://www.aas.net.cn/article/doi/10.16383/j.aas.c200080">here</a>.
 
 ## Installation
 

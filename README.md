@@ -17,7 +17,7 @@ Install <a href="https://tensorflow.google.cn/install">TensorFlow</a>. The code 
 
 The TF operators are included under `tf_ops`, you need to compile them (check `tf_xxx_compile.sh` under each ops subfolder) first.
 
-*Note*: If your GCC version >= 5.4.0, you should remove `-D_GLIBCXX_USE_CXX11_ABI = 0` in the `tf_xxx_compile.sh` first.
+**Note**: If your GCC version >= 5.4.0, you should remove `-D_GLIBCXX_USE_CXX11_ABI = 0` in the `tf_xxx_compile.sh` first.
 
 ## Usage
 

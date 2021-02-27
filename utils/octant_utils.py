@@ -49,7 +49,7 @@ def sample_and_group_all(xyz, points, use_xyz=False):
 
 
 def octant_cnn_module(xyz, points, out_channels, is_training, bn_decay, scope, bn=True, use_xyz=True, weight_decay=None):
-    concat_points = None
+    concat_points = []
     with tf.variable_scope(scope) as sc:
         idx = octant_select(xyz)
         grouped_xyz = group_point(xyz, idx)  # (batch_size, npoint, 8, 3)
@@ -70,14 +70,12 @@ def octant_cnn_module(xyz, points, out_channels, is_training, bn_decay, scope, b
                                     scope='conv_{}'.format(i), bn_decay=bn_decay,
                                     weight_decay=weight_decay)
             points = tf.squeeze(points, [2])  # (batch_size, npoint, out_channel)
-            if concat_points is None:
-                concat_points = points
-            else:
-                concat_points = tf.concat([concat_points, points], axis=-1)
-
-        concat_points = tf_util.conv1d(concat_points, out_channels[-1], 1, padding='VALID', bn=True,
-                                       is_training=is_training, scope='concat_conv', bn_decay=bn_decay)
-        points = concat_points + points
+            concat_points.append(points)
+        
+        fuse_points = tf.concat(concat_points, axis=-1)
+        fuse_points = tf_util.conv1d(fise_points, out_channels[-1], 1, padding='VALID', bn=True,
+                                     is_training=is_training, scope='concat_conv', bn_decay=bn_decay)
+        points = fuse_points + concat_points[-1]
         return points
 
 

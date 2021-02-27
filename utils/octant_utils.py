@@ -73,7 +73,7 @@ def octant_cnn_module(xyz, points, out_channels, is_training, bn_decay, scope, b
             concat_points.append(points)
         
         fuse_points = tf.concat(concat_points, axis=-1)
-        fuse_points = tf_util.conv1d(fise_points, out_channels[-1], 1, padding='VALID', bn=True,
+        fuse_points = tf_util.conv1d(fuse_points, out_channels[-1], 1, padding='VALID', bn=True,
                                      is_training=is_training, scope='concat_conv', bn_decay=bn_decay)
         points = fuse_points + concat_points[-1]
         return points

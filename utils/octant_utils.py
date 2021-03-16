@@ -4,7 +4,7 @@ import os
 import sys
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(BASE_DIR)
-sys.path.append(BASE_DIR)
+sys.path.append(ROOT_DIR)
 from utils import tf_util
 from tf_ops.sampling.tf_sampling import farthest_point_sample, gather_point
 from tf_ops.grouping.tf_grouping import group_point, query_ball_point, knn_point

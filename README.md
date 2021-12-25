@@ -1,7 +1,7 @@
 # 基于卦限卷积神经网络的3D点云分析
 # Octant Convolutional Neural Network for 3D Point Cloud Analysis
 
-![architecture](./doc/teaser.jpg)
+![architecture](./doc/teaser.png)
 
 ## Introduction
 
